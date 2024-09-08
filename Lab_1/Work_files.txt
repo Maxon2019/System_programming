@@ -1,0 +1,34 @@
+@Maxon2019 ➜ /workspaces/System_programming (main) $ mkdir Work
+@Maxon2019 ➜ /workspaces/System_programming (main) $ cd Work
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ mkdir "ФИО" 
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ mkdir "Лабораторная работа №1!"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ chmod -R 772 "Лабораторная работа №1!"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ chmod -R 700 "ФИО"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ touch "Text @1"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ touch "Text \$2"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ Stouch "Text #3"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ cat >> "Text @1"
+Птица говорун отличается умом и сообразительностью!
+Отличается умом, отличается сообразительностью...
+^C
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ cat "Text @1">>"Text \$2"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ mv "Text \$2" "Лабораторная работа №1!"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ cp "Text @1" "ФИО"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ tar -cvf MyAchiv.tar "Text @1" "Text #3"
+Text @1
+Text #3
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ gzip MyAchiv.tar
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ head -n 1 "Text @1" > "Text #3"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ echo "Будь осторожен! Преступник вооружен!" >> "Text #3"
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ cd "ФИО"
+@Maxon2019 ➜ /workspaces/System_programming/Work/ФИО (main) $ touch Result_one.txt
+@Maxon2019 ➜ /workspaces/System_programming/Work/ФИО (main) $ cd /workspaces/System_programming/Work/
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ tac "Text @1"> /workspaces/System_programming/Work/"ФИО"/Result_one.txt | rev
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ mv /workspaces/System_programming/Work/"ФИО"/Result_one.txt /workspaces/System_programming/Work/"ФИО"/Result_two.txt
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ find /workspaces/System_programming/Work/"ФИО" -name 'T*' -exec cat {} >> /workspaces/System_programming/Work/"Лабораторная работа №1!"/Result_3.txt \;
+@Maxon2019 ➜ /workspaces/System_programming/Work (main) $ cd “Лабораторная работа №1!”
+@Maxon2019 ➜ /workspaces/System_programming/Work/Лабораторная работа №1! (main) $ echo `date "+DATE: %m/%d/%y%nTIME: %H:%M:%S"` >> Result_3.txt
+@Maxon2019 ➜ /workspaces/System_programming/Work/Лабораторная работа №1! (main) $ uname -r >> Result_3.txt
+@Maxon2019 ➜ /workspaces/System_programming (main) $ mkdir Lab_1
+@Maxon2019 ➜ /workspaces/System_programming (main) $ mv Work Lab_1
+@Maxon2019 ➜ /workspaces/System_programming (main) $ mv sandbox Lab_1
